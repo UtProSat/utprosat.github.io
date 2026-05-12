@@ -7,13 +7,12 @@
   },
   "scripts": {
     "dev": "astro dev",
-    "build": "astro build",
+    "build": "astro check && astro build",
     "preview": "astro preview",
     "astro": "astro",
     "generate-types": "wrangler types"
   },
   "dependencies": {
-    "@astrojs/cloudflare": "^13.5.0",
     "@astrojs/db": "^0.21.1",
     "@astrojs/markdoc": "^1.0.4",
     "@astrojs/mdx": "^5.0.4",
@@ -31,5 +30,9 @@
   },
   "overrides": {
     "vite": "^7"
+  },
+  "devDependencies": {
+    "@astrojs/check": "^0.9.9",
+    "typescript": "^6.0.3"
   }
 }

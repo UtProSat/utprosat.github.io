@@ -9,6 +9,7 @@
     "dist"
   ],
   "compilerOptions": {
+    "verbatimModuleSyntax": true,
     "jsx": "react-jsx",
     "jsxImportSource": "react"
   }
