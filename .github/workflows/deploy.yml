@@ -22,6 +22,7 @@ jobs:
       - uses: withastro/action@v3
         with:
           path: ./utprosat
+          node-version: 22
 
   deploy:
     needs: build
